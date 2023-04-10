@@ -10,10 +10,10 @@ return {
   --   end,
   -- },
   --
-  {
-    -- github copilot
-    "github/copilot.vim",
-    -- config = function() require("copilot").setup()
-    event = "VeryLazy",
-  },
+  -- {
+  --   -- github copilot
+  --   "github/copilot.vim",
+  --   -- config = function() require("copilot").setup()
+  --   event = "VeryLazy",
+  -- },
 }
