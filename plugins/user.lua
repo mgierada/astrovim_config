@@ -16,4 +16,17 @@ return {
   --   -- config = function() require("copilot").setup()
   --   event = "VeryLazy",
   -- },
+  --
+  --
+  {
+    "pwntester/octo.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      -- "nvim-lua/popup.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    -- ops = {},
+    config = function() require("octo").setup() end,
+    event = "VeryLazy",
+  },
 }
