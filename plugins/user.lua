@@ -26,7 +26,7 @@ return {
       "nvim-telescope/telescope.nvim",
     },
     -- ops = {},
-    config = function() require("octo").setup() end,
+    config = function() require("octo").setup {} end,
     event = "VeryLazy",
   },
 }

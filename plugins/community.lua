@@ -23,4 +23,7 @@ return {
   {
     import = "astrocommunity.colorscheme.oxocarbon",
   },
+  {
+    import = "astrocommunity.test.neotest",
+  },
 }
