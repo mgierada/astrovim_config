@@ -29,4 +29,5 @@ return {
     config = function() require("octo").setup {} end,
     event = "VeryLazy",
   },
+  { "ThePrimeagen/harpoon", config = function() require("harpoon").setup {} end },
 }
