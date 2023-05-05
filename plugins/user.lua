@@ -1,23 +1,5 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
-  --
-  -- {
-  --   -- github copilot
-  --   "github/copilot.vim",
-  --   -- config = function() require("copilot").setup()
-  --   event = "VeryLazy",
-  -- },
-  --
-  --
+  -- Octo
   {
     "pwntester/octo.nvim",
     dependencies = {
@@ -28,7 +10,9 @@ return {
     config = function() require("octo").setup {} end,
     event = "VeryLazy",
   },
+  -- harpoon
   { "ThePrimeagen/harpoon", config = function() require("harpoon").setup {} end },
+  -- nvim coverage
   {
     "andythigpen/nvim-coverage",
     dependencies = {
@@ -58,9 +42,21 @@ return {
     end,
     event = "VeryLazy",
   },
+  -- emoji
   {
     "xiyaowong/telescope-emoji.nvim",
     config = function() require("telescope").load_extension "emoji" end,
     event = "VeryLazy",
+  },
+  --- chatgpt
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function() require("chatgpt").setup() end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
   },
 }
