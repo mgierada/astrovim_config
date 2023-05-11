@@ -12,7 +12,7 @@ return {
     },
     --
   },
-  --colorscheme
+  --brew install font-hack-nerd-fontcolorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.nightfox" },
   { import = "astrocommunity.colorscheme.gruvbox" },
