@@ -22,6 +22,6 @@ return {
   { import = "astrocommunity.colorscheme.monokai-pro" },
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.kanagawa" },
-  -- neeotest
+  -- neotest
   { import = "astrocommunity.test.neotest" },
 }
