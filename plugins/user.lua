@@ -147,4 +147,9 @@ return {
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
+
+  -- kangawa colorscheme
+  {
+    "rebelot/kanagawa.nvim",
+  },
 }
