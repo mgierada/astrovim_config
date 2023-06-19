@@ -154,6 +154,14 @@ return {
     "rebelot/kanagawa.nvim",
   },
 
+  -- everforest colorscheme
+  {
+    "sainnhe/everforest",
+  },
+
+  -- catppuccin colorscheme
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
   --neorg
   {
     "nvim-neorg/neorg",
