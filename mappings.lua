@@ -6,6 +6,9 @@
 return {
   -- first key is the mode
   n = {
+    -- nvim lsp
+    ["<leader>aw"] = { function() vim.diagnostic.setqflist { severity = "W" } end },
+    ["<leader>aa"] = { function() vim.diagnostic.setqflist { severity = "E" } end },
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
