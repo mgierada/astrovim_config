@@ -52,7 +52,13 @@ return {
   {
     "jackMort/ChatGPT.nvim",
     event = "VeryLazy",
-    config = function() require("chatgpt").setup() end,
+    config = function()
+      require("chatgpt").setup {
+        openai_params = {
+          max_tokens = 500,
+        },
+      }
+    end,
     dependencies = {
       "MunifTanjim/nui.nvim",
       "nvim-lua/plenary.nvim",
@@ -153,6 +159,17 @@ return {
   {
     "rebelot/kanagawa.nvim",
   },
+
+  -- everforest colorscheme
+  {
+    "sainnhe/everforest",
+  },
+
+  -- nightfly colorscheme
+  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+
+  -- catppuccin colorscheme
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   --neorg
   {
