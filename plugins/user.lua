@@ -168,6 +168,9 @@ return {
   -- nightfly colorscheme
   { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
 
+  -- moonflight colorscheme
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+
   -- catppuccin colorscheme
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
