@@ -22,5 +22,5 @@ return {
   -- { import = "astrocommunity.colorscheme.monokapro" },
   { import = "astrocommunity.colorscheme.everforest" },
   -- neotest
-  { import = "astrocommunity.test.neotest" },
+  -- { import = "astrocommunity.test.neotest" },
 }
