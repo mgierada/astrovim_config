@@ -11,7 +11,7 @@ return {
     event = "VeryLazy",
   },
   -- harpoon
-  { "ThePrimeagen/harpoon",       config = function() require("harpoon").setup {} end },
+  { "ThePrimeagen/harpoon", config = function() require("harpoon").setup {} end },
   -- nvim coverage
   {
     "andythigpen/nvim-coverage",
@@ -133,11 +133,11 @@ return {
         },
         -- you can enable a preset for easier configuration
         presets = {
-          bottom_search = true,         -- use a classic bottom cmdline for search
-          command_palette = true,       -- position the cmdline and popupmenu together
+          bottom_search = true, -- use a classic bottom cmdline for search
+          command_palette = true, -- position the cmdline and popupmenu together
           long_message_to_split = true, -- long messages will be sent to a split
-          inc_rename = false,           -- enables an input dialog for inc-rename.nvim
-          lsp_doc_border = false,       -- add a border to hover docs and signature help
+          inc_rename = false, -- enables an input dialog for inc-rename.nvim
+          lsp_doc_border = false, -- add a border to hover docs and signature help
         },
       }
     end,
@@ -213,13 +213,13 @@ return {
   },
 
   -- nightfly colorscheme
-  { "bluz71/vim-nightfly-colors", name = "nightfly",                                  lazy = false,   priority = 1000 },
+  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
 
   -- moonflight colorscheme
-  { "bluz71/vim-moonfly-colors",  name = "moonfly",                                   lazy = false,   priority = 1000 },
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 
   -- catppuccin colorscheme
-  { "catppuccin/nvim",            name = "catppuccin",                                priority = 1000 },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   -- onedarkpro colorscheme
   {
@@ -235,9 +235,9 @@ return {
     config = function()
       require("neorg").setup {
         load = {
-          ["core.defaults"] = {},  -- Loads default behaviour
+          ["core.defaults"] = {}, -- Loads default behaviour
           ["core.concealer"] = {}, -- Adds pretty icons to your documents
-          ["core.dirman"] = {      -- Manages Neorg workspaces
+          ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
                 notes = "~/notes",
@@ -294,6 +294,37 @@ return {
       "nvim-neotest/neotest-python",
       "rouge8/neotest-rust",
       "stevanmilic/neotest-scala",
+    },
+  },
+
+  -- rust tools
+  {
+    "simrat39/rust-tools.nvim",
+    config = function()
+      require("rust-tools").setup {
+        tools = {
+          autoSetHints = true,
+          hover_with_actions = true,
+          runnables = {
+            use_telescope = true,
+          },
+          inlay_hints = {
+            show_parameter_hints = true,
+            parameter_hints_prefix = "<-",
+            other_hints_prefix = "=>",
+            max_len_align = false,
+            max_len_align_padding = 1,
+            right_align = false,
+            right_align_padding = 7,
+          },
+        },
+      }
+    end,
+    ft = { "rust" },
+    event = "BufRead",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "mfussenegger/nvim-dap",
     },
   },
 }
