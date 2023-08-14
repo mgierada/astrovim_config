@@ -10,6 +10,7 @@ return {
     config = function() require("octo").setup {} end,
     event = "VeryLazy",
   },
+
   -- harpoon
   { "ThePrimeagen/harpoon", config = function() require("harpoon").setup {} end },
   -- nvim coverage
