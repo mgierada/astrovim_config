@@ -23,6 +23,7 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>s"] = { name = "Telescope" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change scription but the same command
     -- harpoon mapping
@@ -40,7 +41,7 @@ return {
     },
     ["<leader>sc"] = {
       function() require("telescope").extensions.git_worktree.create_git_worktree() end,
-      desc = "Toggle git-worktree",
+      desc = "Create a new git-worktree",
     },
   },
   t = {
