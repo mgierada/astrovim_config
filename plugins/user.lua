@@ -10,8 +10,10 @@ return {
     config = function() require("octo").setup {} end,
     event = "VeryLazy",
   },
+
   -- harpoon
   { "ThePrimeagen/harpoon", config = function() require("harpoon").setup {} end },
+
   -- nvim coverage
   {
     "andythigpen/nvim-coverage",
@@ -42,12 +44,14 @@ return {
     end,
     event = "VeryLazy",
   },
+
   -- emoji
   {
     "xiyaowong/telescope-emoji.nvim",
     config = function() require("telescope").load_extension "emoji" end,
     event = "VeryLazy",
   },
+
   --- chatgpt
   {
     "jackMort/ChatGPT.nvim",
@@ -65,6 +69,7 @@ return {
       "nvim-telescope/telescope.nvim",
     },
   },
+
   -- nvim-metals
   {
     "scalameta/nvim-metals",
