@@ -340,4 +340,11 @@ return {
     config = function() require("telescope").load_extension "git_worktree" end,
     branch = "catch-and-handle-telescope-related-error",
   },
+
+  -- Twilight
+  {
+    "folke/twilight.nvim",
+    opts = {},
+    event = "VeryLazy",
+  },
 }
