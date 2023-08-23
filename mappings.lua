@@ -33,6 +33,11 @@ return {
     ["<leader>pr"] = { "<cmd> Octo pr list<cr>", desc = "Toggle list of open PRs" },
     --Neotest mappings
     ["<leader>ts"] = { function() require("neotest").summary.toggle() end, desc = "Toggle tests summary" },
+    -- git-worktree
+    ["<leader>v"] = {
+      function() require("telescope").extensions.git_worktree.git_worktrees() end,
+      desc = "Toggle git-worktree",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
