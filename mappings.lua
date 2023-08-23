@@ -34,8 +34,12 @@ return {
     --Neotest mappings
     ["<leader>ts"] = { function() require("neotest").summary.toggle() end, desc = "Toggle tests summary" },
     -- git-worktree
-    ["<leader>v"] = {
+    ["<leader>ss"] = {
       function() require("telescope").extensions.git_worktree.git_worktrees() end,
+      desc = "Toggle git-worktree",
+    },
+    ["<leader>sc"] = {
+      function() require("telescope").extensions.git_worktree.create_git_worktree() end,
       desc = "Toggle git-worktree",
     },
   },
