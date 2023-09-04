@@ -207,6 +207,14 @@ return {
     event = "VeryLazy",
   },
 
+  -- tokyonight colorscheme
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+
   -- kangawa colorscheme
   {
     "rebelot/kanagawa.nvim",
