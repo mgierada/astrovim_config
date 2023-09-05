@@ -363,4 +363,11 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     event = "VeryLazy",
   },
+
+  -- ZenMode
+  {
+    "folke/zen-mode.nvim",
+    opts = {},
+    event = "VeryLazy",
+  },
 }
