@@ -355,4 +355,12 @@ return {
     opts = {},
     event = "VeryLazy",
   },
+
+  -- Trouble
+  {
+    "folke/trouble.nvim",
+    opts = {},
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    event = "VeryLazy",
+  },
 }

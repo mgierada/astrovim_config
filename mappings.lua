@@ -43,6 +43,19 @@ return {
       function() require("telescope").extensions.git_worktree.create_git_worktree() end,
       desc = "Create a new git-worktree",
     },
+    -- trouble
+    ["<leader>xx"] = { function() require("trouble").open() end, desc = "Open Trouble" },
+    ["<leader>xw"] = {
+      function() require("trouble").open "workspace_diagnostics" end,
+      desc = "Open workspace diagnostics",
+    },
+    ["<leader>xd"] = {
+      function() require("trouble").open "document_diagnostics" end,
+      desc = "Open document diagnostics",
+    },
+    ["<leader>xq"] = { function() require("trouble").open "quickfix" end, desc = "Open quickfix" },
+    ["<leader>xl"] = { function() require("trouble").open "loclist" end, desc = "Open loclist" },
+    ["<leader>xR"] = { function() require("trouble").open "lsp_references" end, desc = "Open LSP references" },
   },
   t = {
     -- setting a mapping to false will disable it
