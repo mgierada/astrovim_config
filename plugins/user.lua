@@ -370,4 +370,10 @@ return {
     opts = {},
     event = "VeryLazy",
   },
+
+  -- Wakatime
+  {
+    "wakatime/vim-wakatime",
+    event = "VeryLazy",
+  },
 }
