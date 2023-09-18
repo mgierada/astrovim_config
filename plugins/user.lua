@@ -371,9 +371,29 @@ return {
     event = "VeryLazy",
   },
 
+  -- TODO comments
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+    event = "VeryLazy",
+  },
+
   -- Wakatime
   {
     "wakatime/vim-wakatime",
+    event = "VeryLazy",
+  },
+
+  --VimDadBod
+  {
+    "mgierada/vim-dadbod",
+    event = "VeryLazy",
+  },
+
+  --VimDadBodUi
+  {
+    "kristijanhusak/vim-dadbod-ui",
     event = "VeryLazy",
   },
 }
