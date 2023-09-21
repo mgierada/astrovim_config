@@ -1,31 +1,31 @@
-local dap = require "dap"
-
-dap.configurations.scala = {
-  {
-    type = "scala",
-    request = "launch",
-    name = "Run or Test Target",
-    metals = {
-      runType = "runOrTestFile",
-    },
-  },
-  {
-    type = "scala",
-    request = "launch",
-    name = "Debug Target",
-    metals = {
-      runType = "debugTarget",
-    },
-  },
-  {
-    type = "scala",
-    request = "launch",
-    name = "Test Target",
-    metals = {
-      runType = "testTarget",
-    },
-  },
-}
+-- local dap = require "dap"
+--
+-- dap.configurations.scala = {
+--   {
+--     type = "scala",
+--     request = "launch",
+--     name = "Run or Test Target",
+--     metals = {
+--       runType = "runOrTestFile",
+--     },
+--   },
+--   {
+--     type = "scala",
+--     request = "launch",
+--     name = "Debug Target",
+--     metals = {
+--       runType = "debugTarget",
+--     },
+--   },
+--   {
+--     type = "scala",
+--     request = "launch",
+--     name = "Test Target",
+--     metals = {
+--       runType = "testTarget",
+--     },
+--   },
+-- }
 return {
   -- Configure AstroNvim updates
   updater = {
