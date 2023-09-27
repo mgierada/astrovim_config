@@ -385,15 +385,32 @@ return {
     event = "VeryLazy",
   },
 
-  --VimDadBod
+  -- VimDadBod
   {
     "mgierada/vim-dadbod",
     event = "VeryLazy",
   },
 
-  --VimDadBodUi
+  -- VimDadBodUi
   {
     "kristijanhusak/vim-dadbod-ui",
     event = "VeryLazy",
   },
+
+  -- Package-info
+  {
+    "vuki656/package-info.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    config = function() require("package-info").setup {} end,
+    event = "VeryLazy",
+  },
+
+  -- -- Pybumper
+  -- {
+  --   dir = "/Users/maciej/00_codes/pybumper.git/main",
+  --   dependencies = { "MunifTanjim/nui.nvim" },
+  --   config = function() require("pybumper").setup { {} } end,
+  --   dev = true,
+  --   event = "VeryLazy",
+  -- },
 }
