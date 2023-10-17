@@ -394,6 +394,10 @@ return {
   -- VimDadBodUi
   {
     "kristijanhusak/vim-dadbod-ui",
+    dependencies = {
+      "mgierada/vim-dadbod",
+      lazy = true,
+    },
     event = "VeryLazy",
   },
 
@@ -409,10 +413,10 @@ return {
   {
     "mgierada/pybumper.nvim",
     -- dir = "/Users/maciej/00_codes/pybumper.git/main",
-    -- dependencies = { "MunifTanjim/nui.nvim" },
+    dependencies = { "MunifTanjim/nui.nvim" },
     config = function() require("pybumper").setup {} end,
-    -- dev = true,
-    event = "VeryLazy",
+    dev = true,
+    event = "BufRead",
   },
 
   --hairline
@@ -443,7 +447,6 @@ return {
           padding = { left = 1, right = 1 }, -- Adjust padding as needed
         },
       }
-
       -- return the final configuration table
       return opts
     end,
