@@ -56,6 +56,9 @@ return {
     ["<leader>xq"] = { function() require("trouble").open "quickfix" end, desc = "Open quickfix" },
     ["<leader>xl"] = { function() require("trouble").open "loclist" end, desc = "Open loclist" },
     ["<leader>xR"] = { function() require("trouble").open "lsp_references" end, desc = "Open LSP references" },
+    -- lsp additional mapping
+    ["<leader>ll"] = { function() vim.lsp.inlay_hint(0, nil) end, desc = "Toggle Inlay Hints" },
+    --
   },
   t = {
     -- setting a mapping to false will disable it
