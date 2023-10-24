@@ -52,23 +52,23 @@ return {
     event = "VeryLazy",
   },
 
-  --- chatgpt
-  {
-    "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("chatgpt").setup {
-        openai_params = {
-          max_tokens = 500,
-        },
-      }
-    end,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-    },
-  },
+  -- --- chatgpt
+  -- {
+  --   "jackMort/ChatGPT.nvim",
+  --   event = "VeryLazy",
+  --   config = function()
+  --     require("chatgpt").setup {
+  --       openai_params = {
+  --         max_tokens = 500,
+  --       },
+  --     }
+  --   end,
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-telescope/telescope.nvim",
+  --   },
+  -- },
 
   -- nvim-metals
   {
@@ -260,7 +260,7 @@ return {
         },
       }
     end,
-    event = "VeryLazy",
+    event = "BufRead",
   },
 
   -- flutter lsp and tools
@@ -273,6 +273,7 @@ return {
     },
     config = function() require("flutter-tools").setup {} end,
     ft = { "dart" },
+    event = "BufRead",
   },
 
   -- neotest
