@@ -45,12 +45,12 @@ return {
     event = "VeryLazy",
   },
 
-  -- emoji
-  {
-    "xiyaowong/telescope-emoji.nvim",
-    config = function() require("telescope").load_extension "emoji" end,
-    event = "VeryLazy",
-  },
+  -- -- emoji
+  -- {
+  --   "xiyaowong/telescope-emoji.nvim",
+  --   config = function() require("telescope").load_extension "emoji" end,
+  --   event = "VeryLazy",
+  -- },
 
   -- --- chatgpt
   -- {
