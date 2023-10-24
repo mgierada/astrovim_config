@@ -8,7 +8,7 @@ return {
     },
     -- ops = {},
     config = function() require("octo").setup {} end,
-    event = "VeryLazy",
+    event = "BufRead",
   },
 
   -- harpoon
@@ -376,7 +376,7 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
-    event = "VeryLazy",
+    event = "BufRead",
   },
 
   -- Wakatime
@@ -388,7 +388,7 @@ return {
   -- VimDadBod
   {
     "mgierada/vim-dadbod",
-    event = "VeryLazy",
+    event = "BufRead",
   },
 
   -- VimDadBodUi
@@ -398,7 +398,7 @@ return {
       "mgierada/vim-dadbod",
       lazy = true,
     },
-    event = "VeryLazy",
+    event = "BufRead",
   },
 
   -- Package-info
@@ -406,7 +406,7 @@ return {
     "vuki656/package-info.nvim",
     dependencies = { "MunifTanjim/nui.nvim" },
     config = function() require("package-info").setup {} end,
-    event = "VeryLazy",
+    event = "BufRead",
   },
 
   -- Pybumper
