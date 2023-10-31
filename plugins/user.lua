@@ -386,37 +386,27 @@ return {
     event = "VeryLazy",
   },
 
-  -- VimDadBod
-  {
-    "mgierada/vim-dadbod",
-    event = "BufRead",
-  },
-
-  -- VimDadBodUi
-  {
-    "kristijanhusak/vim-dadbod-ui",
-    dependencies = {
-      "mgierada/vim-dadbod",
-      lazy = true,
-    },
-    event = "BufRead",
-  },
+  -- -- VimDadBod
+  -- {
+  --   "mgierada/vim-dadbod",
+  --   event = "BufRead",
+  -- },
+  --
+  -- -- VimDadBodUi
+  -- {
+  --   "kristijanhusak/vim-dadbod-ui",
+  --   dependencies = {
+  --     "mgierada/vim-dadbod",
+  --     lazy = true,
+  --   },
+  --   event = "BufRead",
+  -- },
 
   -- Package-info
   {
     "vuki656/package-info.nvim",
     dependencies = { "MunifTanjim/nui.nvim" },
     config = function() require("package-info").setup {} end,
-    event = "BufRead",
-  },
-
-  -- Pybumper
-  {
-    "mgierada/pybumper.nvim",
-    -- dir = "/Users/maciej/00_codes/pybumper.git/main",
-    dependencies = { "MunifTanjim/nui.nvim" },
-    config = function() require("pybumper").setup {} end,
-    -- dev = true,
     event = "BufRead",
   },
 
@@ -452,4 +442,49 @@ return {
       return opts
     end,
   },
+
+  -- Pybumper
+  {
+    "mgierada/pybumper.nvim",
+    -- dir = "/Users/maciej/00_codes/pybumper.git/main",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    config = function() require("pybumper").setup {} end,
+    -- dev = true,
+    event = "BufRead",
+  },
+
+  -- nvim-dbee
+  -- {
+  --   -- "mgierada/nvim-dbee",
+  --   dir = "/Users/maciejgierada/01_PRACA_IT/02_side_projects/nvim-dbee.git/add_snowflake_driver",
+  --   -- dev = true,
+  --   event = "BufRead",
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --   },
+  --   build = function()
+  --     -- Install tries to automatically detect the install method.
+  --     -- if it fails, try calling it with one of these parameters:
+  --     --    "curl", "wget", "bitsadmin", "go"
+  --     require("dbee").install()
+  --   end,
+  --   config = function()
+  --     require("dbee").setup(--[[optional config]])
+  --   end,
+  -- },
+  -- {
+  --   "kndndrj/nvim-dbee",
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --   },
+  --   build = function()
+  --     -- Install tries to automatically detect the install method.
+  --     -- if it fails, try calling it with one of these parameters:
+  --     --    "curl", "wget", "bitsadmin", "go"
+  --     require("dbee").install()
+  --   end,
+  --   config = function()
+  --     require("dbee").setup(--[[optional config]])
+  --   end,
+  -- },
 }
