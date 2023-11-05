@@ -453,6 +453,26 @@ return {
     event = "BufRead",
   },
 
+  -- Snowsql.nvim
+  {
+    -- "mgierada/pybumper.nvim",
+    dependencies = { "akinsho/toggleterm.nvim" },
+    dir = "/Users/maciej/00_codes/snowsql.nvim.git/main",
+    config = function() require("snowsql").setup {} end,
+    -- dev = true,
+    event = "BufRead",
+  },
+
+  -- Lazydocker.nvim
+  {
+    -- "mgierada/pybumper.nvim",
+    dependencies = { "akinsho/toggleterm.nvim" },
+    dir = "/Users/maciej/00_codes/lazydocker.nvim.git/main",
+    config = function() require("lazydocker").setup {} end,
+    -- dev = true,
+    event = "BufRead",
+  },
+
   -- nvim-dbee
   -- {
   --   -- "mgierada/nvim-dbee",
