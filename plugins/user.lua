@@ -386,21 +386,21 @@ return {
     event = "VeryLazy",
   },
 
-  -- -- VimDadBod
-  -- {
-  --   "mgierada/vim-dadbod",
-  --   event = "BufRead",
-  -- },
-  --
-  -- -- VimDadBodUi
-  -- {
-  --   "kristijanhusak/vim-dadbod-ui",
-  --   dependencies = {
-  --     "mgierada/vim-dadbod",
-  --     lazy = true,
-  --   },
-  --   event = "BufRead",
-  -- },
+  -- VimDadBod
+  {
+    "mgierada/vim-dadbod",
+    event = "BufRead",
+  },
+
+  -- VimDadBodUi
+  {
+    "kristijanhusak/vim-dadbod-ui",
+    dependencies = {
+      "mgierada/vim-dadbod",
+      lazy = true,
+    },
+    event = "BufRead",
+  },
 
   -- Package-info
   {
