@@ -396,10 +396,19 @@ return {
   {
     "kristijanhusak/vim-dadbod-ui",
     dependencies = {
-      "mgierada/vim-dadbod",
-      lazy = true,
+      { "tpope/vim-dadbod", lazy = true },
+      { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
     },
-    event = "BufRead",
+    cmd = {
+      "DBUI",
+      "DBUIToggle",
+      "DBUIAddConnection",
+      "DBUIFindBuffer",
+    },
+    init = function()
+      -- Your DBUI configuration
+      vim.g.db_ui_use_nerd_fonts = 1
+    end,
   },
 
   -- Package-info
@@ -455,7 +464,7 @@ return {
 
   -- Snowsql.nvim
   {
-    -- "mgierada/pybumper.nvim",
+    -- "mgierada/snowsql.nvim",
     dependencies = { "akinsho/toggleterm.nvim" },
     dir = "/Users/maciej/00_codes/snowsql.nvim.git/main",
     config = function() require("snowsql").setup {} end,
@@ -465,9 +474,9 @@ return {
 
   -- Lazydocker.nvim
   {
-    -- "mgierada/pybumper.nvim",
+    "mgierada/lazydocker.nvim",
     dependencies = { "akinsho/toggleterm.nvim" },
-    dir = "/Users/maciej/00_codes/lazydocker.nvim.git/main",
+    -- dir = "/Users/maciej/00_codes/lazydocker.nvim.git/main",
     config = function() require("lazydocker").setup {} end,
     -- dev = true,
     event = "BufRead",
