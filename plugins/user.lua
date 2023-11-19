@@ -52,23 +52,23 @@ return {
   --   event = "VeryLazy",
   -- },
 
-  -- --- chatgpt
-  -- {
-  --   "jackMort/ChatGPT.nvim",
-  --   event = "VeryLazy",
-  --   config = function()
-  --     require("chatgpt").setup {
-  --       openai_params = {
-  --         max_tokens = 500,
-  --       },
-  --     }
-  --   end,
-  --   dependencies = {
-  --     "MunifTanjim/nui.nvim",
-  --     "nvim-lua/plenary.nvim",
-  --     "nvim-telescope/telescope.nvim",
-  --   },
-  -- },
+  --- chatgpt
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup {
+        openai_params = {
+          max_tokens = 500,
+        },
+      }
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+  },
 
   -- nvim-metals
   {
@@ -466,7 +466,8 @@ return {
   {
     -- "mgierada/snowsql.nvim",
     dependencies = { "akinsho/toggleterm.nvim" },
-    dir = "/Users/maciej/00_codes/snowsql.nvim.git/main",
+    -- dir = "/Users/maciej/00_codes/snowsql.nvim.git/main",
+    dir = "/Users/maciejgierada/01_PRACA_IT/02_side_projects/snowsql.nvim.git/main",
     config = function() require("snowsql").setup {} end,
     -- dev = true,
     event = "BufRead",
