@@ -52,7 +52,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      ensure_installed = { "lua_ls", "tsserver", "bashls" },
+      ensure_installed = { "lua_ls", "tsserver", "bashls", "pyright", "spectral" },
       handlers = handlers,
     },
   },
@@ -61,7 +61,7 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      ensure_installed = { "prettier", "stylua", "eslint_d" },
+      ensure_installed = { "stylua", "eslint_d" },
     },
   },
   {
