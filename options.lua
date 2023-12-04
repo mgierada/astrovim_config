@@ -9,6 +9,8 @@ return {
     wrap = true, -- sets vim.opt.wrap
     swapfile = false, -- sets vim.opt.swapfile
     showtabline = 0, -- sets vim.opt.showtabline
+    ruler = true, -- sets vim.opt.ruler
+    colorcolumn = "100", -- sets vim.opt.colorcolumn
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
