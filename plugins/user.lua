@@ -482,6 +482,9 @@ return {
     -- dev = true,
     event = "BufRead",
   },
+  {
+    { "rose-pine/neovim", name = "rose-pine" },
+  },
 
   -- nvim-dbee
   -- {
