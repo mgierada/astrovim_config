@@ -32,6 +32,7 @@ return {
     ["<tab>"] = { function() require("harpoon.ui").nav_next() end },
     -- Octo mappings
     ["<leader>pr"] = { "<cmd> Octo pr list<cr>", desc = "Toggle list of open PRs" },
+    ["<leader>px"] = { "<cmd> Octo pr checks<cr>", desc = "Show checks for a given PR" },
     --Neotest mappings
     ["<leader>ts"] = { function() require("neotest").summary.toggle() end, desc = "Toggle tests summary" },
     -- git-worktree
