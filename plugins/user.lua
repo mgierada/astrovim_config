@@ -1,15 +1,4 @@
 return {
-  -- Octo
-  {
-    "pwntester/octo.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-    },
-    -- ops = {},
-    config = function() require("octo").setup {} end,
-    event = "BufRead",
-  },
 
   -- harpoon
   { "ThePrimeagen/harpoon", config = function() require("harpoon").setup {} end },
@@ -45,13 +34,6 @@ return {
     event = "VeryLazy",
   },
 
-  -- -- emoji
-  -- {
-  --   "xiyaowong/telescope-emoji.nvim",
-  --   config = function() require("telescope").load_extension "emoji" end,
-  --   event = "VeryLazy",
-  -- },
-
   --- chatgpt
   {
     "jackMort/ChatGPT.nvim",
@@ -78,6 +60,7 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
+    
     -- stylua: ignore
     keys = {
       { "<leader>mh", function() require('metals').hover_worksheet() end, desc = "Metals Worksheet" },
