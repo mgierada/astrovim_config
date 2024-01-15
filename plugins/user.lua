@@ -346,7 +346,7 @@ return {
   {
     "kristijanhusak/vim-dadbod-ui",
     dependencies = {
-      { "tpope/vim-dadbod", lazy = true },
+      { "mgierada/vim-dadbod", lazy = true },
       { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
     },
     cmd = {
@@ -430,5 +430,11 @@ return {
     config = function() require("lazydocker").setup {} end,
     -- dev = true,
     event = "BufRead",
+  },
+
+  -- transparent
+  {
+    "xiyaowong/transparent.nvim",
+    event = "VeryLazy",
   },
 }
