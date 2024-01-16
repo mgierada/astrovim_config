@@ -45,7 +45,7 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "rose-pine-moon",
+  colorscheme = "nightfly",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
