@@ -12,7 +12,15 @@ return {
       null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettier,
       null_ls.builtins.formatting.black,
-      -- null_ls.builtins.formatting.isort,
+      {
+        method = null_ls.builtins.formatting.isort,
+        filetypes = { "python" },
+        override = function(params)
+          params[1] = "--profile"
+          params[2] = "black"
+          return params
+        end,
+      },
     }
     return config -- return final config table
   end,
