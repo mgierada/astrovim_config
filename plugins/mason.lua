@@ -6,29 +6,6 @@ local handlers = {
   function(server_name) -- default handler (optional)
     require("lspconfig")[server_name].setup {}
   end,
-  -- Next, you can provide targeted overrides for specific servers.
-  -- ["rust_analyzer"] = function() require("rust-tools").setup {} end,
-  -- TODO:This kind of works but not really
-  --
-  -- ["ruff_lsp"] = function()
-  --   local lspconfig = require "lspconfig"
-  --   lspconfig.ruff_lsp.setup {
-  --     on_attach = function() end,
-  --     init_options = {
-  --       settings = {
-  --         organizeImports = false,
-  --         -- Any extra CLI arguments for `ruff` go here
-  --         args = {
-  --           codeAction = {
-  --             fixViolation = {
-  --               enable = true,
-  --             },
-  --           },
-  --         },
-  --       },
-  --     },
-  --   }
-  -- end,
   ["lua_ls"] = function()
     local lspconfig = require "lspconfig"
     lspconfig.lua_ls.setup {
@@ -52,7 +29,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      ensure_installed = { "lua_ls", "tsserver", "bashls", "pyright", "spectral", "jsonls", "black" },
+      ensure_installed = { "lua_ls", "tsserver", "bashls", "pyright", "spectral", "jsonls" },
       handlers = handlers,
     },
   },
@@ -61,7 +38,7 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      ensure_installed = { "stylua", "eslint_d" },
+      ensure_installed = { "stylua", "eslint_d", "black", "isort" },
     },
   },
   {
