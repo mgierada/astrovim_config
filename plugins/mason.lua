@@ -29,7 +29,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      ensure_installed = { "lua_ls", "tsserver", "bashls", "pyright", "spectral", "jsonls" },
+      ensure_installed = { "lua_ls", "tsserver", "bashls", "pyright", "spectral", "jsonls", "rust_analyzer" },
       handlers = handlers,
     },
   },
