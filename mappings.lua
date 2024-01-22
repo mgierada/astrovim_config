@@ -59,6 +59,10 @@ return {
     ["<leader>xR"] = { function() require("trouble").open "lsp_references" end, desc = "Open LSP references" },
     -- lsp additional mapping
     ["<leader>ll"] = { function() vim.lsp.inlay_hint(0, nil) end, desc = "Toggle Inlay Hints" },
+    -- diff view current file history
+    ["<leader>df"] = { "<cmd> DiffviewFileHistory % <cr>", desc = "Open file history of a current file" },
+    -- diff view current file history
+    ["<leader>dc"] = { "<cmd> DiffviewClose <cr>", desc = "Close diff view" },
     --
   },
   t = {
