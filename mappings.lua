@@ -10,7 +10,7 @@ return {
   n = {
     -- nvim lsp
     ["<leader>aw"] = { function() vim.diagnostic.setqflist { severity = "W" } end },
-    ["<leader>aa"] = { function() vim.diagnostic.setqflist { severity = "E" } end },
+    ["<leader>ae"] = { function() vim.diagnostic.setqflist { severity = "E" } end },
 
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
@@ -33,7 +33,7 @@ return {
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change scription but the same command
 
     -- harpoon mapping
-    ["<leader>a"] = { function() require("harpoon.mark").add_file() end, desc = "Add mark to harpoon" },
+    ["<leader>aa"] = { function() require("harpoon.mark").add_file() end, desc = "Add mark to harpoon" },
     ["<leader>z"] = { function() require("harpoon.ui").toggle_quick_menu() end, desc = "Toggle harpoon UI" },
     ["<tab>"] = { function() require("harpoon.ui").nav_next() end },
 
