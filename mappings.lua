@@ -33,7 +33,7 @@ return {
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change scription but the same command
 
     -- harpoon mapping
-    ["<leader>aa"] = { function() require("harpoon.mark").add_file() end, desc = "Add mark to harpoon" },
+    ["<leader>v"] = { function() require("harpoon.mark").add_file() end, desc = "Add mark to harpoon" },
     ["<leader>z"] = { function() require("harpoon.ui").toggle_quick_menu() end, desc = "Toggle harpoon UI" },
     ["<tab>"] = { function() require("harpoon.ui").nav_next() end },
 
