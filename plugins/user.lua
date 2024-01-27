@@ -69,7 +69,6 @@ return {
       { "gi",         vim.lsp.buf.implementation },
       { "gl",         vim.diagnostic.setloclist },
       { "<leader>f",  vim.lsp.buf.format },
-      { "<leader>aa", vim.diagnostic.setqflist },
       {
         "<leader>mm",
         function() require('telescope').extensions.metals.commands() end,
