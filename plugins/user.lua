@@ -1,5 +1,4 @@
 return {
-
   -- -- Snowsql.nvim
   -- {
   --   -- "mgierada/snowsql.nvim",
