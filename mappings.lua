@@ -30,7 +30,7 @@ return {
     ["<leader>s"] = { name = "Telescope" },
 
     -- quick save
-    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change scription but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
 
     -- harpoon mapping
     ["<leader>v"] = { function() require("harpoon.mark").add_file() end, desc = "Add mark to harpoon" },
