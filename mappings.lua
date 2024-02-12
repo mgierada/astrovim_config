@@ -54,6 +54,9 @@ return {
       desc = "Create a new git-worktree",
     },
 
+    -- Telescope custom mappings
+    ["<leader>sm"] = { "<cmd>Telescope marks<cr>", desc = "Show marks" },
+
     -- trouble
     ["<leader>xx"] = { function() require("trouble").open() end, desc = "Open Trouble" },
     ["<leader>xw"] = {
