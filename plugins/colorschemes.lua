@@ -15,6 +15,8 @@ return {
   -- everforest colorscheme
   {
     "sainnhe/everforest",
+    config = function() vim.g.everforest_background = "medium" end,
+    event = "VimEnter",
   },
 
   -- nightfly colorscheme
@@ -31,7 +33,6 @@ return {
     "olimorris/onedarkpro.nvim",
     -- priority = 1000 -- Ensure it loads first
   },
-  {
-    { "rose-pine/neovim", name = "rose-pine" },
-  },
+  { "rose-pine/neovim", name = "rose-pine", event = "VimEnter" },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, event = "VimEnter" },
 }

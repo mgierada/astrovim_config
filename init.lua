@@ -45,7 +45,8 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "nightfly",
+  -- colorscheme = "nightfly",
+  colorscheme = "astrodark",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
