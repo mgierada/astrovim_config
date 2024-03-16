@@ -1,7 +1,7 @@
-return {
-  -- VimDadBod
-  {
-    "mgierada/vim-dadbod",
-    event = "BufRead",
-  },
-}
+-- return {
+--   -- VimDadBod
+--   {
+--     "mgierada/vim-dadbod",
+--     event = "BufRead",
+--   },
+-- }
