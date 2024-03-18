@@ -34,5 +34,10 @@ return {
     -- priority = 1000 -- Ensure it loads first
   },
   { "rose-pine/neovim", name = "rose-pine", event = "VimEnter" },
+
+  -- gruvbox
   { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, event = "VimEnter" },
+
+  --papercolor
+  { "NLKNguyen/papercolor-theme", event = "VimEnter" },
 }
