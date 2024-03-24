@@ -27,10 +27,13 @@ return {
     end,
     ft = { "go", "rust", "python" },
     dependencies = {
-      "nvim-neotest/neotest-go",
-      "nvim-neotest/neotest-python",
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
       "rouge8/neotest-rust",
       "stevanmilic/neotest-scala",
+      "nvim-neotest/neotest-go",
+      "nvim-neotest/neotest-python",
     },
   },
 }
