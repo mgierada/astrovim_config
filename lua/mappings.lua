@@ -141,9 +141,6 @@ return {
 		-- move lines in neovim - shortcut motion
 		["<A-j>"] = { ":m .+1<CR>==", desc = "Move line down" },
 		["<A-k>"] = { ":m .-2<CR>==", desc = "Move line up" },
-
-		-- replicate ESC in normal mode by typing jk
-		["jk"] = { "<esc>", desc = "jk to escape" },
 	},
 
 	-- visual line mode
