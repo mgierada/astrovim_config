@@ -76,9 +76,7 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      "pyright",
-      -- TODO: kind of works but not really
-      --
+      -- "pyright",
       -- "ruff_lsp",
       "tsserver",
     },
