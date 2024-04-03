@@ -31,6 +31,8 @@ return {
 				signcolumn = "auto", -- sets vim.opt.signcolumn to auto
 				wrap = true, -- sets vim.opt.wrap
 				showtabline = 0, -- sets vim.opt.showtabline
+				ruler = true, -- sets vim.opt.ruler
+				colorcolumn = "100", -- sets vim.opt.colorcolumn
 			},
 			g = { -- vim.g.<key>
 				-- configure global vim variables (vim.g)
