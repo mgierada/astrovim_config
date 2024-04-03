@@ -5,7 +5,6 @@
 -- automatically pick-up stored data by this setting.)
 return {
 	-- first key is the mode
-
 	-- normal mode
 	n = {
 		-- nvim lsp

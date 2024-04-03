@@ -1,4 +1,4 @@
-# AstroNvim Template
+# AstroNvim Config
 
 **NOTE:** This is for AstroNvim v4+
 
@@ -17,8 +17,6 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 
 #### Create a new user repository from this template
 
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
 You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
 
 #### Clone the repository
@@ -31,4 +29,12 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 
 ```shell
 nvim
+```
+
+#### Start Neovim from different config location:
+
+You can start nvim using different configuration location path. Useful, when trying new configuration and installing new versions.
+
+```shell
+NVIM_APPNAME=astronvim_v4 nvim
 ```
