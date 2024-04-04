@@ -140,6 +140,14 @@ return {
 		-- move lines in neovim - shortcut motion
 		["<A-j>"] = { ":m .+1<CR>==", desc = "Move line down" },
 		["<A-k>"] = { ":m .-2<CR>==", desc = "Move line up" },
+
+		-- neogit
+		["<leader>gn"] = {
+			function()
+				require("neogit").open()
+			end,
+			desc = "Open Neogit",
+		},
 	},
 
 	-- visual line mode
