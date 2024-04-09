@@ -135,7 +135,7 @@ return {
 
 		-- diff view current file history
 		["<leader>df"] = { "<cmd> DiffviewFileHistory % <cr>", desc = "Open file history of a current file" },
-		["<leader>dc"] = { "<cmd> DiffviewClose <cr>", desc = "Close diff view" },
+		["<leader>dx"] = { "<cmd> DiffviewClose <cr>", desc = "Close diff view" },
 
 		-- move lines in neovim - shortcut motion
 		["<A-j>"] = { ":m .+1<CR>==", desc = "Move line down" },
