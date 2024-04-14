@@ -148,6 +148,9 @@ return {
 			end,
 			desc = "Open Neogit",
 		},
+
+		-- undotree
+		["<leader>ux"] = { "<cmd> UndotreeToggle <cr>", desc = "Toggle undotree" },
 	},
 
 	-- visual line mode
