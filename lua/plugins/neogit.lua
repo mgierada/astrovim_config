@@ -1,6 +1,6 @@
 return {
 	"NeogitOrg/neogit",
-	branch = "nightly", -- provides support for nvim v.10
+	-- branch = "nightly", -- provides support for nvim v.10
 	dependencies = {
 		"nvim-lua/plenary.nvim", -- required
 		"sindrets/diffview.nvim", -- optional - Diff integration

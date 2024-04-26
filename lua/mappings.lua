@@ -5,6 +5,7 @@
 -- automatically pick-up stored data by this setting.)
 return {
 	-- first key is the mode
+	-- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
 	-- normal mode
 	n = {
 		-- nvim lsp
