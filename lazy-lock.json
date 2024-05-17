@@ -30,6 +30,7 @@
   "gitsigns.nvim": { "branch": "main", "commit": "52f8da33cc0cadbf1164c4a91c8bfd6895533d67" },
   "gruvbox.nvim": { "branch": "main", "commit": "6e4027ae957cddf7b193adfaec4a8f9e03b4555f" },
   "guess-indent.nvim": { "branch": "main", "commit": "b8ae749fce17aa4c267eec80a6984130b94f80b2" },
+  "guihua.lua": { "branch": "master", "commit": "3bbb0aaedad89dc9eb775dbb72c98d7defc95f74" },
   "harpoon": { "branch": "master", "commit": "ccae1b9bec717ae284906b0bf83d720e59d12b91" },
   "heirline.nvim": { "branch": "master", "commit": "03cff30d7e7d3ba6fdc00925f015822f79cef908" },
   "indent-blankline.nvim": { "branch": "master", "commit": "3d08501caef2329aba5121b753e903904088f7e6" },
@@ -105,4 +106,3 @@
   "vim-wakatime": { "branch": "master", "commit": "5d11a253dd1ecabd4612a885175216032d814300" },
   "which-key.nvim": { "branch": "main", "commit": "ce741eb559c924d72e3a67d2189ad3771a231414" },
   "zen-mode.nvim": { "branch": "main", "commit": "78557d972b4bfbb7488e17b5703d25164ae64e6a" }
-}
