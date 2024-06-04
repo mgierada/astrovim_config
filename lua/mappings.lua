@@ -152,6 +152,9 @@ return {
 
 		-- undotree
 		["<leader>ux"] = { "<cmd> UndotreeToggle <cr>", desc = "Toggle undotree" },
+
+		-- noice
+		["<leader>yy"] = { "<cmd> NoiceDismiss <cr>", desc = "Dismiss noice popup" },
 	},
 
 	-- visual line mode
