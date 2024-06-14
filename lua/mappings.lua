@@ -155,6 +155,9 @@ return {
 
 		-- noice
 		["<leader>yy"] = { "<cmd> NoiceDismiss <cr>", desc = "Dismiss noice popup" },
+
+		-- Oil
+		["-"] = { "<cmd> Oil <cr>", desc = "Open Oil" },
 	},
 
 	-- visual line mode
