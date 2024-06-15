@@ -38,3 +38,19 @@ You can start nvim using different configuration location path. Useful, when try
 ```shell
 NVIM_APPNAME=astronvim_v4 nvim
 ```
+
+# Troubleshooting
+
+When building `neovim` from scratch, you may end up seeing errors related to missing or not working cmake or c compiler.
+
+If that is the case, make sure you have installed the latest cmake
+
+```shell
+brew install cmake
+```
+
+If that doesn't help, make sure the SDROOT environment variable is properly set.
+
+```shell
+export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+```
