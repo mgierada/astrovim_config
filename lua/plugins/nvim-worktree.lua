@@ -1,11 +1,12 @@
 return {
 	-- nvim worktree
 	{
-		"/ThePrimeagen/git-worktree.nvim",
+		"mgierada/git-worktree.nvim",
+		-- dir = "/Users/maciejgierada/01_PRACA_IT/02_side_projects/git-worktree.nvim",
 		event = "VeryLazy",
 		config = function()
 			require("telescope").load_extension("git_worktree")
 		end,
-		branch = "catch-and-handle-telescope-related-error",
+		-- branch = "handle_changes_in_telescope_api",
 	},
 }
