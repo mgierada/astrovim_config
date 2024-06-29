@@ -2,11 +2,19 @@ return {
 	-- nvim worktree
 	{
 		"mgierada/git-worktree.nvim",
-		-- dir = "/Users/maciejgierada/01_PRACA_IT/02_side_projects/git-worktree.nvim",
+		-- dir = "/Users/maciej/00_codes/git-worktree.nvim.git/do-not-notify-worktree-changed/",
 		event = "VeryLazy",
 		config = function()
 			require("telescope").load_extension("git_worktree")
 		end,
-		-- branch = "handle_changes_in_telescope_api",
+		-- branch = "do-not-notify-worktree-changed",
+
+		-- config = function()
+		-- 	local git_worktree = require("git-worktree")
+		-- 	git_worktree.setup({
+		-- 		enable_notifications = false,
+		-- 	})
+		-- 	require("telescope").load_extension("git_worktree")
+		-- end,
 	},
 }
